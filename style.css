@@ -1,0 +1,52 @@
+* {
+	transition-duration: .3s;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+}
+
+header {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	border: solid 1px black;
+}
+
+section {
+	width: 100%;
+	min-height: 100vh;
+	border: 1px solid black;
+}
+
+section:not(.home) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.examen {
+	justify-self: flex-start;
+	align-self: flex-start;
+	margin-left: 10%;
+	font-size: xx-large;
+	text-shadow: 0 0 5px blue;
+	text-transform: uppercase;
+}
+
+.jours, .minutes {
+	align-self: flex-end;
+	margin-right: 40%;
+	font-size: x-large;
+}
+
+.heures, .secondes {
+	align-self: flex-start;
+	margin-left: 40%;
+	font-size: x-large;
+}
